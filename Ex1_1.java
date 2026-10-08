@@ -9,9 +9,11 @@ Code, Compile, Run and Debug online from anywhere in world.
 public class Ex1_1 {
 	public static void main(String[] args) {
 		int i = 1, sum = 0;
-		while(i <= 10){
+		while(true){
 		    sum = sum + i;
 		    i = i+1;
+		    if (i>10)
+		        break;
 		}
 		System.out.println("1+2+…+10=" + sum);
 	}
